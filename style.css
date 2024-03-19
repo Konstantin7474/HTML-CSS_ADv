@@ -906,7 +906,7 @@ summary::-webkit-details-marker {
 
 .product-box-cart {
   padding-top: 96px;
-  padding-left: 230px;
+  padding-left: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1131,24 +1131,24 @@ summary::-webkit-details-marker {
   margin-left: 230px;
   margin-top: 86px;
   margin-bottom: 96px;
+  gap: 192px;
 }
 .cart_links__browse {
   width: 167px;
   height: 50px;
-  background-color: rgb(241, 109, 127);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(241, 109, 127);
+  border: 1px solid rgb(164, 164, 164);
   gap: 20px;
 }
 .cart_links__text {
-  color: #FFF;
+  color: #000;
   font-family: "Lato Light";
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 

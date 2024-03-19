@@ -1098,7 +1098,7 @@ summary {
 
 .product-box-cart{
     padding-top: 96px;
-    padding-left: 230px;
+    padding-left: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1462,6 +1462,8 @@ summary {
     margin-top: 86px;
     margin-bottom: 96px;
 
+    gap: 192px;
+
     
 
     &__browse{
@@ -1471,14 +1473,14 @@ summary {
 
         
 
-    background-color: rgba(241, 109, 127, 1);
+    
         
 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(241, 109, 127, 1);
+    border: 1px solid rgba(164, 164, 164, 1);
 
     gap: 20px;
     
@@ -1489,12 +1491,12 @@ summary {
 
         
 
-        color: #FFF;
+        color: #000;
 
         font-family: $secondFont;
         font-size: 14px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
 
     }
