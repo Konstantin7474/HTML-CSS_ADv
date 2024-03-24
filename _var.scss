@@ -17,7 +17,7 @@ $thirdFont: 'Roboto Regular';
 $widthSite:1140px;
 $gapGrid:30px;
 
-$thirdSite: ($widthSite - $gapGrid) / 3;
+$thirdSite: calc(($widthSite - $gapGrid) / 3);
 
 $widthMenuBurger:232px;
 
