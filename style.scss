@@ -130,6 +130,7 @@ summary::-webkit-details-marker {
     padding-right: 16px;
     padding-bottom: 16px;
     padding-left: 16px;
+    
   }
 
   &[open] {
@@ -218,8 +219,9 @@ summary::-webkit-details-marker {
 
 @media screen and (max-width: 426px) {
   .filter {
-    width: 150px;
     padding-top: 0;
+    position: absolute;
+    left: 10px;
   }
 }
 
@@ -286,12 +288,14 @@ summary::-webkit-details-marker {
     position: absolute;
     left: -9px;
     top: 22px;
+    z-index: 2;
   }
 }
 
 @media screen and (max-width: 426px) {
   .sort {
     padding-top: 2px;
+    padding-left: 60px;
   }
 }
 
@@ -1601,6 +1605,10 @@ summary::-webkit-details-marker {
   margin-top: 57px;
   background-color: #f5f3f3;
 
+  &__text_box{
+    display: flex;
+  }
+
   &__name {
     color: $mainColor;
     font-family: $mainFont;
@@ -1629,13 +1637,24 @@ summary::-webkit-details-marker {
     line-height: normal;
   }
 
+  &__text_text{
+    padding-top: 39px;
+    padding-left: 25px;
+    color: #4a4a4a;
+    font-family: $mainFont;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
   &__text-position__2 {
     display: flex;
   }
 
   &__text1 {
     height: 19px;
-    width: 170px;
+    width: 120px;
     margin-top: 12px;
     margin-left: 150px;
     color: #222;
@@ -1648,6 +1667,7 @@ summary::-webkit-details-marker {
 
   &__text2 {
     padding-top: 12px;
+    padding-left: 15px;
     color: #f16d7f;
     font-family: $mainFont;
     font-size: 16px;
@@ -1793,7 +1813,6 @@ summary::-webkit-details-marker {
   &__browse {
     width: 167px;
     height: 50px;
-
     position: relative;
     display: flex;
     justify-content: center;
@@ -1820,6 +1839,18 @@ summary::-webkit-details-marker {
 .reg_links:hover .cart_links__text {
   color: #ffffff;
   transition: 0.9s;
+}
+
+@media screen and (max-width: 2560px) {
+  .reg_links {
+    margin-left: 720px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .reg_links {
+    margin-left: 230px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1964,6 +1995,20 @@ summary::-webkit-details-marker {
   }
 }
 
+@media screen and (max-width: 2560px) {
+  .registration-box-cart {
+    margin-left: 720px;
+    
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .registration-box-cart {
+    margin-left: 230px;
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
   .registration-box-cart {
     margin-left: 131px;
@@ -2107,6 +2152,18 @@ summary::-webkit-details-marker {
     .registration-description__list {
       font-size: 16px;
     }
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  .registration-description {
+    margin-left: 530px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .registration-description {
+    margin-left: 128px;
   }
 }
 

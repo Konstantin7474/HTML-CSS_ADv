@@ -230,8 +230,9 @@ summary::-webkit-details-marker {
 
 @media screen and (max-width: 426px) {
   .filter {
-    width: 150px;
     padding-top: 0;
+    position: absolute;
+    left: 10px;
   }
 }
 @media screen and (max-width: 426px) {
@@ -290,11 +291,13 @@ summary::-webkit-details-marker {
   position: absolute;
   left: -9px;
   top: 22px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 426px) {
   .sort {
     padding-top: 2px;
+    padding-left: 60px;
   }
 }
 .header {
@@ -1482,6 +1485,9 @@ summary::-webkit-details-marker {
   margin-top: 57px;
   background-color: #f5f3f3;
 }
+.card-box-cart__text_box {
+  display: flex;
+}
 .card-box-cart__name {
   color: #222222;
   font-family: "Lato Regular";
@@ -1507,12 +1513,22 @@ summary::-webkit-details-marker {
   font-weight: 400;
   line-height: normal;
 }
+.card-box-cart__text_text {
+  padding-top: 39px;
+  padding-left: 25px;
+  color: #4a4a4a;
+  font-family: "Lato Regular";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .card-box-cart__text-position__2 {
   display: flex;
 }
 .card-box-cart__text1 {
   height: 19px;
-  width: 170px;
+  width: 120px;
   margin-top: 12px;
   margin-left: 150px;
   color: #222;
@@ -1524,6 +1540,7 @@ summary::-webkit-details-marker {
 }
 .card-box-cart__text2 {
   padding-top: 12px;
+  padding-left: 15px;
   color: #f16d7f;
   font-family: "Lato Regular";
   font-size: 16px;
@@ -1677,6 +1694,16 @@ summary::-webkit-details-marker {
   transition: 0.9s;
 }
 
+@media screen and (max-width: 2560px) {
+  .reg_links {
+    margin-left: 720px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .reg_links {
+    margin-left: 230px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .reg_links {
     margin-left: 130px;
@@ -1803,6 +1830,16 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 
+@media screen and (max-width: 2560px) {
+  .registration-box-cart {
+    margin-left: 720px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .registration-box-cart {
+    margin-left: 230px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .registration-box-cart {
     margin-left: 131px;
@@ -1929,6 +1966,16 @@ summary::-webkit-details-marker {
   }
 }
 
+@media screen and (max-width: 2560px) {
+  .registration-description {
+    margin-left: 530px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .registration-description {
+    margin-left: 128px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .registration-description {
     margin-left: 64px;
