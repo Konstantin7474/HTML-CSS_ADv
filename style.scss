@@ -130,7 +130,6 @@ summary::-webkit-details-marker {
     padding-right: 16px;
     padding-bottom: 16px;
     padding-left: 16px;
-    
   }
 
   &[open] {
@@ -1605,7 +1604,7 @@ summary::-webkit-details-marker {
   margin-top: 57px;
   background-color: #f5f3f3;
 
-  &__text_box{
+  &__text_box {
     display: flex;
   }
 
@@ -1637,7 +1636,7 @@ summary::-webkit-details-marker {
     line-height: normal;
   }
 
-  &__text_text{
+  &__text_text {
     padding-top: 39px;
     padding-left: 25px;
     color: #4a4a4a;
@@ -1805,7 +1804,7 @@ summary::-webkit-details-marker {
 .reg_links {
   display: flex;
   justify-content: left;
-  margin-left: 230px;
+  margin-left: 85px;
   margin-top: 86px;
   margin-bottom: 96px;
   gap: 192px;
@@ -1841,18 +1840,6 @@ summary::-webkit-details-marker {
   transition: 0.9s;
 }
 
-@media screen and (max-width: 2560px) {
-  .reg_links {
-    margin-left: 720px;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .reg_links {
-    margin-left: 230px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .reg_links {
     margin-left: 130px;
@@ -1886,7 +1873,7 @@ summary::-webkit-details-marker {
 
 .registration-box-cart {
   margin-top: 64px;
-  margin-left: 231px;
+  margin-left: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1995,26 +1982,6 @@ summary::-webkit-details-marker {
   }
 }
 
-@media screen and (max-width: 2560px) {
-  .registration-box-cart {
-    margin-left: 720px;
-    
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .registration-box-cart {
-    margin-left: 230px;
-  }
-}
-
-
-@media screen and (max-width: 1024px) {
-  .registration-box-cart {
-    margin-left: 131px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .registration-box-cart {
     margin-left: 16px;
@@ -2035,7 +2002,7 @@ summary::-webkit-details-marker {
 
 .registration-description {
   margin-top: 64px;
-  margin-left: 128px;
+  margin-left: 80px;
   &__price {
     margin-top: 22px;
     color: #000;
@@ -2062,7 +2029,7 @@ summary::-webkit-details-marker {
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1130px) {
     .registration-description__price {
       font-size: 16px;
     }
@@ -2074,7 +2041,7 @@ summary::-webkit-details-marker {
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1130px) {
     .registration-description__price__2 {
       font-size: 16px;
     }
@@ -2105,7 +2072,7 @@ summary::-webkit-details-marker {
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1130px) {
     .registration-description__list-position2 {
       gap: 24px;
       margin-top: 0;
@@ -2152,24 +2119,6 @@ summary::-webkit-details-marker {
     .registration-description__list {
       font-size: 16px;
     }
-  }
-}
-
-@media screen and (max-width: 2560px) {
-  .registration-description {
-    margin-left: 530px;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .registration-description {
-    margin-left: 128px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .registration-description {
-    margin-left: 64px;
   }
 }
 
