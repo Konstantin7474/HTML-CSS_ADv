@@ -300,11 +300,10 @@ summary::-webkit-details-marker {
 
 .header {
   background-color: $mainColor;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 15px;
   display: flex;
   align-items: center;
-
   flex-direction: row;
   gap: 859px;
   position: relative;
@@ -343,6 +342,9 @@ summary::-webkit-details-marker {
   align-items: center;
   gap: 41px;
 }
+.logo_loupe{
+  padding-top: 5px;
+}
 
 .logo_loupe:hover svg path {
   transition: 0.5s;
@@ -352,7 +354,11 @@ summary::-webkit-details-marker {
 .header__right {
   display: flex;
   align-items: center;
-  gap: 41px;
+  gap: 33px;
+}
+.burger_menu{
+  padding-top: 12px;
+  padding-left: 2px;
 }
 
 .burger_menu:hover svg path {
@@ -360,9 +366,17 @@ summary::-webkit-details-marker {
   fill: #f16d7f;
 }
 
+.logo_person{
+  padding-top: 6px;
+}
+
 .logo_person:hover svg path {
   transition: 0.5s;
   fill: #f16d7f;
+}
+
+.logo_cart{
+  padding-top: 9px;
 }
 
 .logo_cart:hover svg path {
@@ -428,15 +442,19 @@ summary::-webkit-details-marker {
   .title_1 {
     display: flex;
     flex-direction: row;
+    margin-left: 63px;
+    
 
     .title_text_1 {
-      margin-left: 16px;
+      margin-left: 17px;
 
       .h1_1 {
         font-family: $mainFont;
         font-weight: 900;
-        font-size: 48px;
+        font-size: 49px;
         color: $mainColor;
+        font-style: normal;
+        line-height: normal;
       }
 
       @media screen and (max-width: 1024px) {
@@ -446,10 +464,11 @@ summary::-webkit-details-marker {
       }
 
       .h2_text {
+        margin-bottom: 5px;
         display: flex;
         font-family: $secondFont;
         font-weight: 700;
-        font-size: 32px;
+        font-size: 27px;
         gap: 8px;
 
         .h2_2 {
@@ -466,7 +485,11 @@ summary::-webkit-details-marker {
     }
   }
 }
-
+.title_main_1{
+  height: 92px;
+  width: 12px;
+  margin-top: 2px;
+}
 @media screen and (max-width: 426px) {
   .main_content_1 {
     padding-top: 148px;
@@ -479,8 +502,8 @@ summary::-webkit-details-marker {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 64px;
-  padding-bottom: 96px;
+  padding-top: 60px;
+  padding-bottom: 89px;
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
 
@@ -559,6 +582,20 @@ summary::-webkit-details-marker {
 
   .block_1_text_11 {
     @include flex_center;
+    margin-left: 1px;
+    margin-top: -2px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+  }
+
+  .block_1_text_111 {
+    @include flex_center;
+    margin-left: 1px;
+    margin-top: -2px;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -577,7 +614,29 @@ summary::-webkit-details-marker {
     color: #ffffff;
   }
 
+  .block_1_text_12 {
+    margin-bottom: 1px;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+  }
+
   .block_1_text_2 {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #f16d7f;
+  }
+
+  .block_1_text_22 {
+    margin-bottom: 6px;
     font-family: $mainFont;
     font-style: normal;
     font-weight: 700;
@@ -597,7 +656,7 @@ summary::-webkit-details-marker {
 }
 
 .main_content_3 {
-  padding-bottom: 96px;
+  padding-bottom: 0px;
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
 
@@ -693,10 +752,11 @@ summary::-webkit-details-marker {
       justify-content: center;
       align-items: flex-start;
       padding: 24px 16px;
-      gap: 16px;
+      gap: 10px;
     }
 
     .title_1_item_1 {
+      margin-top: -4px;
       font-family: $mainFont;
       font-style: normal;
       font-weight: 400;
@@ -713,13 +773,10 @@ summary::-webkit-details-marker {
       line-height: 17px;
       color: #5d5d5d;
       display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
     }
 
     .title_3_item_1 {
+      margin-top: 9px;
       font-family: $mainFont;
       font-style: normal;
       font-weight: 400;
@@ -727,10 +784,6 @@ summary::-webkit-details-marker {
       line-height: 19px;
       color: #f16d7f;
       display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
     }
   }
 }
@@ -739,7 +792,7 @@ summary::-webkit-details-marker {
   width: 212px;
   height: 48px;
   margin: auto;
-  margin-top: 48px;
+  margin-top: 43px;
   margin-bottom: 96px;
   position: relative;
   display: flex;
@@ -796,6 +849,8 @@ summary::-webkit-details-marker {
   }
 
   .footer_title_1_content_1 {
+    margin-left: -5px;
+    margin-top: -4px;
     color: $fifthColor;
     font-family: $mainFont;
     font-size: 19.96px;
@@ -806,6 +861,7 @@ summary::-webkit-details-marker {
   }
 
   .footer_title_2_content_1 {
+    margin-top: -8px;
     color: $eightthColor;
     font-family: $secondFont;
     font-size: 13.97px;
@@ -828,12 +884,12 @@ summary::-webkit-details-marker {
   width: 100%;
   background-image: url(./img/footer_bg.jpeg);
   background-size: cover;
-  padding-top: 97px;
-  padding-bottom: 126px;
+  padding-top: 80px;
+  padding-bottom: 148px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 223px;
+  gap: 196px;
 }
 
 .footer_feedback .img__bg_feedback {
@@ -862,6 +918,8 @@ summary::-webkit-details-marker {
 }
 
 .footer_photo {
+  margin-left: 247px;
+  margin-right: 124px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -869,10 +927,22 @@ summary::-webkit-details-marker {
 }
 
 .footer_subscribe {
+  margin-right: 252px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer_subscribe {
+    margin-right: -4px;
+  }
+  .footer_photo {
+    margin-right: 60px;
+  }
+
 }
 
 .footer_sub1,
@@ -910,7 +980,7 @@ summary::-webkit-details-marker {
   padding-bottom: 23px;
   display: flex;
   flex-direction: row;
-  gap: 732px;
+  gap: 824px;
   justify-content: center;
 
   .footer_down_text {
@@ -1097,7 +1167,7 @@ summary::-webkit-details-marker {
   align-items: center;
   border: 1px solid #eaeaea;
   &__1 {
-    padding-top: 65px;
+    padding-top: 71px;
     color: #f16d7f;
     font-family: $secondFont;
     font-size: 14px;
@@ -1120,10 +1190,12 @@ summary::-webkit-details-marker {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    padding-top: 27px;
+    padding-top: 14px;
+    padding-right: 3px;
   }
 
   &__345 {
+    padding-right: 5px;
     padding-top: 48px;
     display: flex;
     flex-direction: column;
@@ -1139,6 +1211,7 @@ summary::-webkit-details-marker {
 
   &__6 {
     padding-top: 32px;
+    padding-right: 22px;
     color: #ef5b70;
     font-family: $secondFont;
     font-size: 24px;
@@ -1161,7 +1234,8 @@ summary::-webkit-details-marker {
     position: relative;
     display: flex;
     gap: $gapGrid;
-    padding-top: 65px;
+    padding-top: 54px;
+    padding-right: 22px;
     box-sizing: border-box;
   }
 
@@ -1232,6 +1306,7 @@ summary::-webkit-details-marker {
 }
 
 .cart_main_content_3 {
+  padding-top: 85px;
   padding-bottom: 96px;
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -1257,7 +1332,7 @@ summary::-webkit-details-marker {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 24px 16px;
+    padding: 21px 18px;
     gap: 16px;
   }
 
@@ -1804,7 +1879,6 @@ summary::-webkit-details-marker {
 .reg_links {
   display: flex;
   justify-content: left;
-  margin-left: 85px;
   margin-top: 86px;
   margin-bottom: 96px;
   gap: 192px;
@@ -1873,7 +1947,6 @@ summary::-webkit-details-marker {
 
 .registration-box-cart {
   margin-top: 64px;
-  margin-left: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2001,8 +2074,8 @@ summary::-webkit-details-marker {
 }
 
 .registration-description {
-  margin-top: 64px;
-  margin-left: 80px;
+  margin-top: 62px;
+  margin-left: 128px;
   &__price {
     margin-top: 22px;
     color: #000;
@@ -2056,14 +2129,14 @@ summary::-webkit-details-marker {
   &__list-position1 {
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 15px;
   }
 
   &__list-position2 {
     margin-top: 6px;
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: 28px;
   }
 
   @media screen and (max-width: 768px) {
